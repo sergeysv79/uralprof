@@ -1,0 +1,485 @@
+html
+    font-family: "Montserrat", sans-serif
+
+body
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    
+
+.wrapper
+    overflow: auto
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+ 
+.container
+    max-width: 1450px
+    padding: 0 15px
+    margin: 0 auto
+    
+
+.header 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 80px
+    background: #FFFFFF
+    z-index: 3
+    padding: 8px 0
+
+
+    &_blok
+        display: flex
+        align-items: center
+
+
+    &_logo
+        width: 252.12px
+        height: 62.66px
+        img
+            max-width: 100%
+        &:hover
+            background-color: #90f1e95b
+            transition: 0.4s all
+    &_menu
+        flex: 1 1 auto
+    
+    .menu
+        display: flex
+        justify-content: flex-end
+        &_list
+            width: 457px
+            height: 24px
+            list-style-type: none
+            display: flex
+            justify-content: space-between
+            margin-right: 58px
+            padding-right: 12px
+            padding-left: 12px
+            margin-bottom: 0
+        &_item
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            letter-spacing: 0.44px            
+        &_link
+            color: #000000
+            text-decoration: none        
+
+    &_btn
+        position: relative
+        min-width: 196px
+        height: 40px
+        border-radius: 6px
+        background: #FFFFFF
+        border: 1px solid #000000
+        cursor: pointer
+        font-family: inherit
+        font-weight: 500
+        font-size: 14px
+        line-height: 2.7
+        text-align: center
+        letter-spacing: 0.75px
+        text-transform: uppercase
+        color: #000000 
+        text-decoration: none     
+        &:hover
+            background-color: #90f1e95b
+            transition: 0.4s all
+        &:active
+                top: .1em
+                left: .1em
+                box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset
+                transition: 0.4s all
+
+.content
+    flex: 1 1 auto
+
+.promo
+    margin-top: 80px
+    position: relative
+
+    &_gradient
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: rgba(0,0,0,.15)
+        filter: blur(9.98958px)
+    
+    
+    &_background
+        background: url('../img/bg_img/truck-09.jpg') 50% / cover no-repeat
+    &_wrapper
+        padding: 184px 0 231px 88px
+        max-width: 832px
+    
+    &_text
+        position: relative
+        padding: 20px 32px 55px 33px
+        &_background
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(294.3deg, rgba(0, 0, 0, 0.25) -21.12%, rgba(0, 17, 4, 0.25) 100%), rgba(255, 255, 255, 0.02)
+            filter: blur(100px)
+            border-radius: 55px
+        &_title
+            position: relative
+            font-weight: 800
+            font-size: 64px
+            line-height: 78px            
+            color: #FFFFFF
+            z-index: 2
+            margin-top: 15px
+        &_subtitle
+            position: relative
+            font-weight: 500
+            font-size: 36px
+            line-height: 140.62%
+            letter-spacing: 0.25px
+            color: #FFFFFF
+            margin-bottom: 33px
+            
+        &_btn
+            width: 334px
+            height: 75.91px
+            position: relative
+            display: inline-block
+            font-weight: 500
+            font-size: 20px
+            line-height: 2.1
+            text-align: center
+            letter-spacing: 1.425px
+            text-transform: uppercase
+            color: #000000
+            background: #FFFFFF
+            border: 2px solid #000000
+            border-radius: 6px
+            padding: 15px        
+            text-decoration: none
+            &:hover
+                background-color: #90f1e95b
+                transition: 0.4s all
+            &:active
+                top: .1em
+                left: .1em
+                box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset
+                transition: 0.4s all
+
+.service
+    position: relative
+    min-height: 1030px
+    background: #f4fff5
+    background-image: url('../icons/bgr/Задник карта.png')
+    background-position: 100% 100%
+    background-size: 100%
+    background-repeat: no-repeat
+    margin-bottom: 30px
+    &_wrapper
+        position: absolute
+        left: 0
+        right: 0
+        top: -83px
+
+    &_block        
+        height: 443px
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 8px
+        margin-bottom: 45px
+        padding: 35px 30px 0px
+    &_img
+        display: block
+        max-width: 100%
+        margin: 0 auto 10px
+    &_title
+        text-align: center
+        font-weight: 400
+        font-size: 36px
+        line-height: 140.62%
+        letter-spacing: 0.25px
+        margin-bottom: 10px
+    &_subtitle
+        text-align: center
+        font-weight: 400
+        font-size: 18px
+        line-height: 140.62%
+        letter-spacing: 0.25px
+    &_btn
+        width: 327.44px
+        height: 75px
+        background: #FFFFFF
+        border: 2px solid rgba(1, 89, 21, 0.4)
+        border-radius: 6px
+        font-weight: 500;
+        font-size: 20px
+        line-height: 3.25
+        align-items: center
+        text-align: center
+        letter-spacing: 1.40625px
+        text-transform: uppercase
+        margin: 0 auto 
+        &:hover
+            background-color: #90f1e95b
+            transition: 0.4s all
+        &:active
+            top: .1em
+            left: .1em
+            box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset
+            transition: 0.4s all
+        a
+            text-decoration: none
+            color: #000000
+
+.experience
+    height: 667px
+    &_wrapper
+        min-height: 629.49px
+
+    &_content
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+              
+    &_info
+        max-width: 50%
+        min-height: 356px
+        margin-top: 24px
+        padding-right: 15px   
+        &_title
+            font-weight: 400
+            font-size: 38px
+            line-height: 140.62%
+            align-items: center
+            letter-spacing: 0.25px
+            margin-bottom: 30px
+        &_text
+            font-weight: 400
+            font-size: 20px
+            line-height: 140.62%
+            letter-spacing: 0.25px
+            color: #000000
+    &_card
+        width: 100%
+        min-height: 385px
+        background: url('../icons/maps/Vector.png') 100% / 100% no-repeat
+        &_title
+            font-weight: 300
+            font-size: 144px
+            line-height: 168.62%
+            text-align: center
+            letter-spacing: 0.25px
+            color: #000000
+        &_subtitle
+            font-weight: 300
+            font-size: 52px
+            line-height: 140.62%
+            text-align: center
+            letter-spacing: 0.25px
+            text-transform: uppercase
+            color: #000000       
+    &_box
+        display: flex
+        justify-content: space-between
+        background: url('../icons/experience/road.png') center / 100% no-repeat
+        &_icons
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 206.49px
+            height: 206.49px
+            border-radius: 50%
+            background: #B8FFC8
+
+.bgr
+    background: rgba(202, 255, 214, 0.3)
+    background-image: url('../icons/bgr/les.svg')
+    background-position: bottom
+    background-size: 100%
+    background-repeat: no-repeat
+    padding-top: 60px    
+
+.contacts
+    &_title
+        font-weight: 400
+        font-size: 36px
+        line-height: 140.62%
+        letter-spacing: 0.25px
+        color: #000000
+        text-align: center
+        margin-bottom: 70px
+    &_content
+        display: flex
+        margin: 0 -15px
+    &_info
+        width: 50%
+        padding: 0 15px
+    &_addres
+        height: 218px
+        background: #B8FFC8
+        border-radius: 10px
+        padding-left: 70px
+        display: flex
+        align-items: center
+        margin-bottom: 30px
+        a                  
+            text-decoration: none
+            font-weight: 400
+            font-size: 36px
+            line-height: 140.62%
+            letter-spacing: 0.25px
+            color: #000000
+            img
+                margin-right: 43px
+    &_maps
+        max-width: 100%
+        height: 466px
+        position: relative
+        iframe
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border-radius: 2%
+
+.form
+    padding: 0 0 145px
+    &_container
+        max-width: 966px
+        margin: 0 auto
+        padding: 0 15px
+    &_title
+        font-weight: 400
+        font-size: 36px
+        line-height: 140.62%
+        letter-spacing: 0.356707px
+        color: #000000
+        text-align: center
+        margin-bottom: 65px
+    &_input
+        &_name
+            width: 100%
+            height: 71px
+            padding: 15px 26px
+            margin-bottom: 43px
+            background: #FFFFFF
+            border: 2.8px solid rgba(1, 89, 21, 0.4)
+            border-radius: 11.5501px
+            font-weight: 400
+            font-size: 28px
+            line-height: 140.62%
+            letter-spacing: 0.288753px
+            color: #000000
+            opacity: 0.6
+        &_message
+            width: 100%
+            height: 242.56px
+            padding: 15px 26px
+            margin-bottom: 27px
+            background: #FFFFFF
+            border: 2.8px solid rgba(1, 89, 21, 0.4)
+            box-sizing: border-box
+            border-radius: 11.563px
+            font-weight: 400;
+            font-size: 28px
+            line-height: 140.62%
+            letter-spacing: 0.289075px
+            color: #000000
+            opacity: 0.6
+            resize: none
+    &_data
+        position: relative
+        &_text
+            font-weight: 400
+            font-size: 28px
+            line-height: 140.62%
+            letter-spacing: 0.289075px
+            color: #000000
+            margin-bottom: 27px
+    input[type='checkbox']
+        display: none
+    label
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            right: 0
+            top: 50%
+            margin-top: -35.5px
+            width: 71px
+            height: 71px
+            background: #fff
+            border: 2.8px solid rgba(1,89,21,.4)
+            border-radius: 8.56098px
+    input[type='checkbox']
+        &:checked + label
+            &:before
+                background: url('../icons/experience/mark.svg') 50% no-repeat
+
+
+    &_btn
+        width: 100%
+        height: 78px
+        background: #FFFFFF
+        border: 2.8px solid rgba(1, 89, 21, 0.4)
+        box-sizing: border-box
+        border-radius: 8.56098px
+        font-family: inherit
+        font-weight: 500
+        font-size: 25.6829px
+        line-height: 31px
+        text-align: center
+        letter-spacing: 1.47142px
+        text-transform: uppercase
+        color: #000000
+        &:disabled
+            background: #cbcbcb
+            opacity: .5 
+
+               
+                           
+.footer
+    max-width: 1920px
+    min-height: 142px
+    background: #000702
+    padding: 26px 0 25px
+    &_content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        div
+            flex: 1 1 33.333%
+    &_menu_list
+        display: flex
+        justify-content: left
+    &_menu_item
+            list-style-type: none
+    &_menu_link
+        text-decoration: none
+        font-weight: 400
+        font-size: 18px
+        line-height: 32px
+        font-feature-settings: 'liga' off
+        color: #D9DBE1
+        margin-left: 47px
+        &:hover
+            text-decoration: underline
+            color:  #D9DBE1
+    &_descr
+        font-weight: 400
+        font-size: 18.6667px
+        line-height: 32px
+        text-align: right
+        font-feature-settings: 'liga' off
+        color: #D9DBE1
+        span
+            display: block
+            margin-top: 20px

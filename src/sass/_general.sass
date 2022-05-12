@@ -5,7 +5,6 @@ body
     box-sizing: border-box
     margin: 0
     padding: 0
-    
 
 .wrapper
     overflow: auto
@@ -13,14 +12,12 @@ body
     flex-direction: column
     min-height: 100%
 
- 
 .container
     max-width: 1450px
     padding: 0 15px
     margin: 0 auto
-    
 
-.header 
+.header
     position: fixed
     top: 0
     left: 0
@@ -30,11 +27,10 @@ body
     z-index: 3
     padding: 8px 0
 
-
     &_blok
+        position: relative
         display: flex
         align-items: center
-
 
     &_logo
         width: 252.12px
@@ -46,7 +42,7 @@ body
             transition: 0.4s all
     &_menu
         flex: 1 1 auto
-    
+
     .menu
         display: flex
         justify-content: flex-end
@@ -64,10 +60,22 @@ body
             font-weight: 400
             font-size: 16px
             line-height: 24px
-            letter-spacing: 0.44px            
+            letter-spacing: 0.44px
         &_link
             color: #000000
-            text-decoration: none        
+            text-decoration: none
+        .btn
+            min-width: 132px
+            height: 27px
+            font-size: 12px
+            line-height: 2
+            color: #000000
+            text-decoration: none
+            text-align: center
+            border-radius: 3.45515px
+            border: 0.575858px solid #333333
+            margin-top: 40px
+            display: none
 
     &_btn
         position: relative
@@ -84,16 +92,18 @@ body
         text-align: center
         letter-spacing: 0.75px
         text-transform: uppercase
-        color: #000000 
-        text-decoration: none     
+        color: #000000
+        text-decoration: none
         &:hover
             background-color: #90f1e95b
             transition: 0.4s all
         &:active
-                top: .1em
-                left: .1em
-                box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset
-                transition: 0.4s all
+            top: .1em
+            left: .1em
+            box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset
+            transition: 0.4s all
+    .burger
+        display: none
 
 .content
     flex: 1 1 auto
@@ -110,14 +120,13 @@ body
         left: 0
         background: rgba(0,0,0,.15)
         filter: blur(9.98958px)
-    
-    
+
     &_background
         background: url('../img/bg_img/truck-09.jpg') 50% / cover no-repeat
     &_wrapper
         padding: 184px 0 231px 88px
         max-width: 832px
-    
+
     &_text
         position: relative
         padding: 20px 32px 55px 33px
@@ -134,7 +143,7 @@ body
             position: relative
             font-weight: 800
             font-size: 64px
-            line-height: 78px            
+            line-height: 78px
             color: #FFFFFF
             z-index: 2
             margin-top: 15px
@@ -146,7 +155,7 @@ body
             letter-spacing: 0.25px
             color: #FFFFFF
             margin-bottom: 33px
-            
+
         &_btn
             width: 334px
             height: 75.91px
@@ -162,7 +171,7 @@ body
             background: #FFFFFF
             border: 2px solid #000000
             border-radius: 6px
-            padding: 15px        
+            padding: 15px
             text-decoration: none
             &:hover
                 background-color: #90f1e95b
@@ -175,7 +184,7 @@ body
 
 .service
     position: relative
-    min-height: 1030px
+    height: 1030px
     background: #f4fff5
     background-image: url('../icons/bgr/Задник карта.png')
     background-position: 100% 100%
@@ -188,10 +197,10 @@ body
         right: 0
         top: -83px
 
-    &_block        
+    &_block
         height: 443px
-        background: #FFFFFF;
-        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        background: #FFFFFF
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25)
         border-radius: 8px
         margin-bottom: 45px
         padding: 35px 30px 0px
@@ -218,14 +227,14 @@ body
         background: #FFFFFF
         border: 2px solid rgba(1, 89, 21, 0.4)
         border-radius: 6px
-        font-weight: 500;
+        font-weight: 500
         font-size: 20px
         line-height: 3.25
         align-items: center
         text-align: center
         letter-spacing: 1.40625px
         text-transform: uppercase
-        margin: 0 auto 
+        margin: 0 auto
         &:hover
             background-color: #90f1e95b
             transition: 0.4s all
@@ -242,17 +251,18 @@ body
     height: 667px
     &_wrapper
         min-height: 629.49px
+        position: relative
 
     &_content
         display: flex
         justify-content: space-between
         margin-bottom: 30px
-              
+
     &_info
         max-width: 50%
         min-height: 356px
         margin-top: 24px
-        padding-right: 15px   
+        padding-right: 15px
         &_title
             font-weight: 400
             font-size: 38px
@@ -284,7 +294,7 @@ body
             text-align: center
             letter-spacing: 0.25px
             text-transform: uppercase
-            color: #000000       
+            color: #000000
     &_box
         display: flex
         justify-content: space-between
@@ -297,14 +307,17 @@ body
             height: 206.49px
             border-radius: 50%
             background: #B8FFC8
-
+            .img_gross
+                width: 55%
+            .img_smail
+                width: 40%
 .bgr
     background: rgba(202, 255, 214, 0.3)
     background-image: url('../icons/bgr/les.svg')
     background-position: bottom
     background-size: 100%
     background-repeat: no-repeat
-    padding-top: 60px    
+    padding-top: 60px
 
 .contacts
     &_title
@@ -329,7 +342,7 @@ body
         display: flex
         align-items: center
         margin-bottom: 30px
-        a                  
+        a
             text-decoration: none
             font-weight: 400
             font-size: 36px
@@ -388,7 +401,7 @@ body
             border: 2.8px solid rgba(1, 89, 21, 0.4)
             box-sizing: border-box
             border-radius: 11.563px
-            font-weight: 400;
+            font-weight: 400
             font-size: 28px
             line-height: 140.62%
             letter-spacing: 0.289075px
@@ -413,7 +426,7 @@ body
             position: absolute
             right: 0
             top: 50%
-            margin-top: -35.5px
+            transform: translateY(-50%)
             width: 71px
             height: 71px
             background: #fff
@@ -423,7 +436,7 @@ body
         &:checked + label
             &:before
                 background: url('../icons/experience/mark.svg') 50% no-repeat
-
+                background-size: 100%
 
     &_btn
         width: 100%
@@ -442,10 +455,8 @@ body
         color: #000000
         &:disabled
             background: #cbcbcb
-            opacity: .5 
+            opacity: .5
 
-               
-                           
 .footer
     max-width: 1920px
     min-height: 142px
@@ -461,7 +472,7 @@ body
         display: flex
         justify-content: left
     &_menu_item
-            list-style-type: none
+        list-style-type: none
     &_menu_link
         text-decoration: none
         font-weight: 400
@@ -472,7 +483,7 @@ body
         margin-left: 47px
         &:hover
             text-decoration: underline
-            color:  #D9DBE1
+            color: #D9DBE1
     &_descr
         font-weight: 400
         font-size: 18.6667px

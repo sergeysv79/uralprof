@@ -40,6 +40,7 @@ body {
 }
 
 .header_blok {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,6 +107,20 @@ body {
   text-decoration: none;
 }
 
+.header .menu .btn {
+  min-width: 132px;
+  height: 27px;
+  font-size: 12px;
+  line-height: 2;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3.45515px;
+  border: 0.575858px solid #333333;
+  margin-top: 40px;
+  display: none;
+}
+
 .header_btn {
   position: relative;
   min-width: 196px;
@@ -138,6 +153,10 @@ body {
           box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.05) inset;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
+}
+
+.header .burger {
+  display: none;
 }
 
 .content {
@@ -244,7 +263,7 @@ body {
 
 .service {
   position: relative;
-  min-height: 1030px;
+  height: 1030px;
   background: #f4fff5;
   background-image: url("../icons/bgr/Задник карта.png");
   background-position: 100% 100%;
@@ -337,6 +356,7 @@ body {
 
 .experience_wrapper {
   min-height: 629.49px;
+  position: relative;
 }
 
 .experience_content {
@@ -424,6 +444,14 @@ body {
   height: 206.49px;
   border-radius: 50%;
   background: #B8FFC8;
+}
+
+.experience_box_icons .img_gross {
+  width: 55%;
+}
+
+.experience_box_icons .img_smail {
+  width: 40%;
 }
 
 .bgr {
@@ -577,7 +605,8 @@ body {
   position: absolute;
   right: 0;
   top: 50%;
-  margin-top: -35.5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 71px;
   height: 71px;
   background: #fff;
@@ -587,6 +616,7 @@ body {
 
 .form input[type='checkbox']:checked + label:before {
   background: url("../icons/experience/mark.svg") 50% no-repeat;
+  background-size: 100%;
 }
 
 .form_btn {
@@ -730,9 +760,6 @@ body {
     margin-top: 23px;
     line-height: 1.6;
   }
-  .service {
-    height: 762px;
-  }
   .service_wrapper {
     top: -50px;
   }
@@ -751,7 +778,7 @@ body {
     margin-top: 20px;
   }
   .experience {
-    height: 529px;
+    height: 580px;
     margin-bottom: 30px;
   }
   .experience_info {
@@ -761,7 +788,7 @@ body {
     font-size: 33px;
   }
   .experience_info_text {
-    font-size: 16px;
+    font-size: 20px;
   }
   .experience_card {
     min-height: 293px;
@@ -802,6 +829,9 @@ body {
   }
   .form {
     padding: 0 0 107px;
+  }
+  .form_container {
+    max-width: 656px;
   }
   .form_title {
     font-size: 30px;
@@ -860,5 +890,864 @@ body {
   .footer_descr_item span {
     display: inline;
     margin-left: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    min-height: 56px;
+  }
+  .header_logo {
+    width: 161px;
+    height: 40px;
+  }
+  .header_btn {
+    min-width: 172px;
+    height: 33px;
+    font-size: 12px;
+  }
+  .header .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .menu_list {
+    width: 312px;
+    margin: 0;
+  }
+  .header .menu_item {
+    font-size: 14px;
+  }
+  .promo {
+    margin-top: 56px;
+  }
+  .promo_wrapper {
+    padding: 105px 0 120px 70px;
+    max-width: 575px;
+  }
+  .promo_text {
+    padding: 20px 10px 55px;
+  }
+  .promo_text_title {
+    font-size: 43px;
+    line-height: 52px;
+  }
+  .promo_text_subtitle {
+    font-size: 25px;
+    margin-bottom: 19px;
+  }
+  .promo_text_btn {
+    width: 231px;
+    height: 52px;
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 1.2;
+  }
+  .service {
+    height: 661px;
+  }
+  .service_wrapper {
+    top: -45px;
+  }
+  .service_block {
+    height: 293px;
+    padding: 20px 15px 0;
+    margin-bottom: 25px;
+  }
+  .service .block {
+    height: 269px;
+  }
+  .service_img {
+    height: 152px;
+  }
+  .service_title {
+    font-size: 23px;
+    margin-bottom: 5px;
+  }
+  .service_subtitle {
+    font-size: 14px;
+  }
+  .service_btn {
+    width: 185px;
+    height: 44px;
+    font-size: 12px;
+    line-height: 3.5;
+    margin-top: 5px;
+  }
+  .experience {
+    height: 550px;
+    margin-bottom: 30px;
+  }
+  .experience_info {
+    min-height: 256px;
+  }
+  .experience_info_title {
+    font-size: 30px;
+  }
+  .experience_info_text {
+    font-size: 18px;
+  }
+  .experience_card {
+    min-height: 275px;
+    padding-top: 40px;
+  }
+  .experience_card_title {
+    font-size: 100px;
+  }
+  .experience_card_subtitle {
+    font-size: 40px;
+    line-height: 70.62%;
+  }
+  .experience_box_icons {
+    width: 140.52px;
+    height: 140.52px;
+  }
+  .bgr {
+    padding-top: 40px;
+  }
+  .contacts_title {
+    font-size: 28px;
+    line-height: 110.62%;
+    margin-bottom: 25px;
+  }
+  .contacts_addres {
+    height: 122px;
+    margin-bottom: 44px;
+  }
+  .contacts_addres a {
+    font-size: 24px;
+  }
+  .contacts_addres a img {
+    width: 38px;
+    height: 38px;
+    margin-right: 20px;
+  }
+  .contacts_maps {
+    height: 288px;
+  }
+  .form {
+    padding: 0 0 80px;
+  }
+  .form_container {
+    max-width: 620px;
+  }
+  .form_title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  .form_input_name {
+    height: 47px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 5px 24px;
+  }
+  .form_input_message {
+    height: 160px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 5px 24px;
+  }
+  .form_data_text {
+    font-size: 19px;
+  }
+  .form label::before {
+    width: 47px;
+    height: 47px;
+  }
+  .form_btn {
+    height: 52px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    min-height: 50px;
+    padding: 10px 0;
+  }
+  .header_logo {
+    width: 130px;
+    height: 30px;
+  }
+  .header_btn {
+    min-width: 136px;
+    height: 26px;
+    font-size: 10px;
+  }
+  .header .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .menu_list {
+    width: 290px;
+  }
+  .header .menu_item {
+    font-size: 12px;
+  }
+  .promo {
+    margin-top: 50px;
+  }
+  .promo_wrapper {
+    padding: 80px 0 90px 40px;
+    max-width: 453px;
+  }
+  .promo_text {
+    padding: 20px 10px 55px 10px;
+  }
+  .promo_text_title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .promo_text_subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .promo_text_btn {
+    width: 190px;
+    height: 45px;
+    font-size: 11px;
+    margin-top: 0px;
+    line-height: 1;
+  }
+  .service {
+    height: 580px;
+  }
+  .service_wrapper {
+    top: -50px;
+  }
+  .service_block {
+    height: 270px;
+    padding: 20px 15px 0;
+    margin-bottom: 20px;
+  }
+  .service .block {
+    height: 250px;
+  }
+  .service_img {
+    height: 125px;
+  }
+  .service_title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .service_subtitle {
+    font-size: 13px;
+  }
+  .service_btn {
+    width: 150px;
+    height: 40px;
+    font-size: 10px;
+    line-height: 3.7;
+    margin-top: 0px;
+  }
+  .experience {
+    height: 420px;
+    margin-bottom: 30px;
+  }
+  .experience_wrapper {
+    min-height: 440px;
+  }
+  .experience_info {
+    min-height: 215px;
+    margin-top: 0;
+  }
+  .experience_info_title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .experience_info_text {
+    font-size: 13px;
+  }
+  .experience_card {
+    min-height: 230px;
+    padding-top: 30px;
+  }
+  .experience_card_title {
+    font-size: 80px;
+  }
+  .experience_card_subtitle {
+    font-size: 35px;
+    line-height: 70.62%;
+  }
+  .experience_box_icons {
+    width: 115.52px;
+    height: 115.52px;
+  }
+  .bgr {
+    padding-top: 25px;
+  }
+  .contacts_title {
+    font-size: 22px;
+    line-height: 110.62%;
+    margin-bottom: 25px;
+  }
+  .contacts_addres {
+    height: 100px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
+  .contacts_addres a {
+    font-size: 20px;
+  }
+  .contacts_addres a img {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+  }
+  .contacts_maps {
+    height: 220px;
+  }
+  .form {
+    padding: 0 0 65px;
+  }
+  .form_container {
+    max-width: 500px;
+  }
+  .form_title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .form_input_name {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 5px 8px;
+  }
+  .form_input_message {
+    height: 135px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 5px 8px;
+  }
+  .form_data_text {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  .form label::before {
+    width: 40px;
+    height: 40px;
+  }
+  .form_btn {
+    height: 45px;
+    font-size: 15px;
+  }
+  .footer {
+    min-height: 120px;
+    padding: 5px 0;
+  }
+  .footer_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_menu_list {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .footer_menu_item {
+    margin-right: 80px;
+  }
+  .footer_menu_item:last-child {
+    margin-right: 0;
+  }
+  .footer_menu_item a {
+    font-size: 14px;
+    margin: 0;
+  }
+  .footer_descr {
+    text-align: center;
+  }
+  .footer_descr_item {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .footer_descr_item span {
+    display: inline;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 45px;
+    padding: 7px 0;
+  }
+  .header_logo {
+    width: 120px;
+    height: 30px;
+  }
+  .header_btn {
+    min-width: 117px;
+    height: 26px;
+    font-size: 8px;
+    line-height: 2.9;
+  }
+  .header .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .menu_list {
+    width: 235px;
+  }
+  .header .menu_item {
+    font-size: 10px;
+  }
+  .promo {
+    margin-top: 45px;
+  }
+  .promo_wrapper {
+    padding: 60px 0 70px 40px;
+    max-width: 416px;
+  }
+  .promo_text {
+    padding: 25px 15px 50px 15px;
+  }
+  .promo_text_title {
+    font-size: 34px;
+    line-height: 40px;
+    margin: 10px 0 10px;
+  }
+  .promo_text_subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .promo_text_btn {
+    width: 160px;
+    height: 37px;
+    font-size: 10px;
+    margin-top: 0px;
+    line-height: 0.4;
+  }
+  .service {
+    height: 503px;
+    margin-bottom: 15px;
+  }
+  .service_wrapper {
+    top: -45px;
+  }
+  .service_block {
+    height: 222px;
+    padding: 20px 15px 0;
+    margin-bottom: 20px;
+  }
+  .service .block {
+    height: 206px;
+  }
+  .service_img {
+    height: 115px;
+    margin: 0 auto 5px;
+  }
+  .service_title {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .service_subtitle {
+    font-size: 9px;
+  }
+  .service_btn {
+    min-width: 125px;
+    height: 35px;
+    font-size: 9px;
+    line-height: 3.7;
+    margin-top: 0px;
+  }
+  .experience {
+    height: 341px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  .experience_content {
+    height: 193px;
+  }
+  .experience_info {
+    min-height: 175px;
+    margin-top: 0;
+  }
+  .experience_info_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .experience_info_text {
+    font-size: 10px;
+  }
+  .experience_card {
+    min-height: 187px;
+    padding-top: 20px;
+    background-position: top;
+  }
+  .experience_card_title {
+    font-size: 60px;
+  }
+  .experience_card_subtitle {
+    font-size: 25px;
+    line-height: 70.62%;
+  }
+  .experience_box_icons {
+    width: 93.52px;
+    height: 93.52px;
+  }
+  .bgr {
+    padding-top: 25px;
+  }
+  .contacts_title {
+    font-size: 18px;
+    line-height: 110.62%;
+    margin-bottom: 20px;
+  }
+  .contacts_addres {
+    height: 81px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
+  .contacts_addres a {
+    font-size: 16px;
+  }
+  .contacts_addres a img {
+    width: 26px;
+    height: 26px;
+    margin-right: 20px;
+  }
+  .contacts_maps {
+    height: 182px;
+  }
+  .form {
+    padding: 0 0 50px;
+  }
+  .form_container {
+    max-width: 420px;
+  }
+  .form_title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .form_input_name {
+    height: 32px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .form_input_message {
+    height: 108px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .form_data_text {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+  .form label::before {
+    width: 32px;
+    height: 32px;
+  }
+  .form_btn {
+    height: 35px;
+    font-size: 12px;
+  }
+  .footer {
+    min-height: 89px;
+  }
+  .footer_menu_item {
+    margin-right: 60px;
+  }
+  .footer_menu_item:last-child {
+    margin-right: 0;
+  }
+  .footer_menu_item a {
+    font-size: 11px;
+  }
+  .footer_descr {
+    text-align: center;
+    line-height: 2;
+  }
+  .footer_descr_item {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    min-height: 40px;
+    padding: 3px 0;
+  }
+  .header_logo {
+    width: 137px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .header_btn {
+    display: none;
+  }
+  .header .menu_list {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 10px 20px;
+    top: -100%;
+    right: 0;
+    width: 200px;
+    height: 367px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+  }
+  .header .menu_active {
+    top: 40px;
+  }
+  .header .menu .btn {
+    display: block;
+  }
+  .header .menu_item {
+    font-size: 16px;
+    padding-top: 40px;
+  }
+  .header .menu_item:first-child {
+    padding-top: 54px;
+  }
+  .header .burger {
+    display: block;
+    width: 22px;
+    height: 10px;
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    margin-top: -5px;
+  }
+  .header .burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 2px;
+    background-color: #000000;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .header .burger_active span {
+    margin-bottom: -2px;
+  }
+  .header .burger_active span:first-child {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  .header .burger_active span:nth-child(2) {
+    display: none;
+  }
+  .header .burger_active span:nth-child(3) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
+  }
+  .promo {
+    margin-top: 40px;
+  }
+  .promo_wrapper {
+    padding: 45px 0 40px 15px;
+    max-width: 276px;
+  }
+  .promo_text {
+    padding: 20px 5px 65px 5px;
+  }
+  .promo_text_title {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+  .promo_text_subtitle {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .promo_text_btn {
+    width: 118px;
+    height: 30px;
+    font-size: 7px;
+    padding: 0;
+    line-height: 3.9;
+  }
+  .service {
+    height: 1250px;
+    margin-bottom: 0px;
+    background-repeat: repeat;
+  }
+  .service_wrapper {
+    top: -35px;
+  }
+  .service_block {
+    height: 234px;
+    padding: 20px 15px 0;
+    margin-bottom: 15px;
+  }
+  .service .block {
+    height: 222px;
+  }
+  .service_img {
+    height: 115px;
+    margin: 0 auto 5px;
+  }
+  .service_title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .service_subtitle {
+    font-size: 12px;
+  }
+  .service_btn {
+    min-width: 125px;
+    height: 35px;
+    font-size: 11px;
+    line-height: 3;
+    margin-top: 7px;
+  }
+  .experience {
+    height: 528px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+  .experience_wrapper {
+    min-height: 528px;
+  }
+  .experience_content {
+    display: block;
+    height: 510px;
+  }
+  .experience_info {
+    min-height: 270px;
+    max-width: 70%;
+    padding: 10px;
+  }
+  .experience_info_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .experience_info_text {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .experience_card {
+    min-height: 130px;
+    max-width: 70%;
+    padding-top: 10px;
+    background-position: center;
+    background-size: 80%;
+  }
+  .experience_card_title {
+    font-size: 45px;
+  }
+  .experience_card_subtitle {
+    font-size: 20px;
+    line-height: 80.62%;
+  }
+  .experience_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../icons/experience/road_vertical.svg") center/40% no-repeat;
+  }
+  .experience_box_icons {
+    width: 80.52px;
+    height: 80.52px;
+    margin-top: 18px;
+  }
+  .bgr {
+    padding-top: 30px;
+  }
+  .contacts_title {
+    font-size: 18px;
+    line-height: 110.62%;
+    margin-bottom: 20px;
+  }
+  .contacts_content {
+    display: block;
+    margin: 0;
+  }
+  .contacts_info {
+    width: 190px;
+    margin: 0 auto 20px;
+    padding: 0;
+  }
+  .contacts_addres {
+    width: 190px;
+    height: 35px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    border-radius: 3px;
+  }
+  .contacts_addres a {
+    font-size: 12px;
+    line-height: 160%;
+  }
+  .contacts_addres a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+  }
+  .contacts_width {
+    width: 100%;
+  }
+  .contacts_maps {
+    height: 177px;
+  }
+  .form {
+    padding: 0 0 40px;
+  }
+  .form_container {
+    max-width: 420px;
+    padding: 0;
+  }
+  .form_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .form_input_name {
+    height: 39px;
+    margin-bottom: 11px;
+    font-size: 10px;
+    padding: 5px 8px;
+    border-radius: 3px;
+  }
+  .form_input_message {
+    height: 105px;
+    margin-bottom: 14px;
+    font-size: 10px;
+    padding: 5px 8px;
+    border-radius: 3px;
+  }
+  .form_data_text {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
+  .form label::before {
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    margin-top: -11px;
+  }
+  .form_btn {
+    height: 39px;
+    font-size: 12px;
+    border-radius: 3px;
   }
 }
